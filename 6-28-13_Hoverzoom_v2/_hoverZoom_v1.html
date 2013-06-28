@@ -8,6 +8,13 @@
 	
 		<link rel="stylesheet" type="text/css" href="http://igavelauctions.com/wp-content/themes/twentyeleven/css/hoverZoomEtalage.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script><script type="text/javascript" src="http://igavelauctions.com/wp-content/themes/twentyeleven/js/hoverZoomjquery.etalage.min.js"></script><script type="text/javascript" src="http://igavelauctions.com/wp-content/themes/twentyeleven/js/hoverZoomThumbWidths.js"></script>
 
+
+
+
+</style>
+
+
+
 	</head>
 	<body>
 
@@ -41,17 +48,39 @@
 
 
 
-	<p align=center><a id="ithumbs"></a>
-	
-		<a HREF="#Image1"><IMG BORDER="0" SRC="http://images.igavelauctions.com/x/161/Bl486865/Thumbs/c166_1.jpg"></a>
 
-	</p>
+
+
+
+
+
+
+
+
 
 
 <a href="#ithumbs">
-	<img id="Image1" src="http://images.igavelauctions.com/x/161/Na55739/3400010.jpg">
+<img id="Image1" src="http://images.igavelauctions.com/x/161/Na55739/3400010.jpg">
 </a>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p align=center><a id="ithumbs">			
+		<a HREF="#Image1"><IMG BORDER="0" SRC="http://images.igavelauctions.com/x/161/Na55739/Thumbs/3400010.jpg"></a>
+			
+<br>
 
 
 
@@ -61,8 +90,14 @@
 <script type="text/javascript">
 
 
-var thumbImageSource = $('#Image1').attr('src');
+var largeImageSource = $('#Image1').attr('src');
+console.log(largeImageSource);
+
+
+var thumbImageSource = $('a[href="#Image1"] img').attr('src');
 console.log(thumbImageSource);
+
+
 
 
 
@@ -70,3 +105,5 @@ console.log(thumbImageSource);
 
 
 </html>
+
+
